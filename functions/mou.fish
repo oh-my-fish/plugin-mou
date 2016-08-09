@@ -1,5 +1,5 @@
 function mou -d "The missing Markdown editor for web developers"
-  if set -l path (realpath $argv)
+  if set -l path (realpath $argv 2> /dev/null)
     echo "tell application \"Mou\"
             open \"$path\"
             activate
