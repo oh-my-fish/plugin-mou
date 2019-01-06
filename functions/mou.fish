@@ -3,8 +3,8 @@ function mou -d "The missing Markdown editor for web developers"
     echo "tell application \"Mou\"
             open \"$path\"
             activate
-          end tell" | osascript >/dev/null ^&1
+          end tell" | osascript >/dev/null 2>&1
   else
-    echo "tell application \"Mou\" to activate" | osascript >/dev/null ^&1
+    echo "tell application \"Mou\" to activate" | osascript >/dev/null 2>&1
   end
 end
